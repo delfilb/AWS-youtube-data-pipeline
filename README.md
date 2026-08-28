@@ -2,7 +2,8 @@
 
 A cloud-native ETL pipeline that ingests YouTube trending video data across 10 regions, transforms it through a medallion architecture (Bronze > Silver > Gold), enforces data quality gates, and produces analytics-ready aggregations — all orchestrated by AWS Step Functions.
 
-![Architecture Diagram](assets\images\diagram.jpg)
+<img width="1341" height="745" alt="Plantilla de diagrama de arquitectura de AWS (1)" src="https://github.com/user-attachments/assets/128582e1-df1e-4b3f-9e15-63a8639254e3" />
+
 
 ---
 
