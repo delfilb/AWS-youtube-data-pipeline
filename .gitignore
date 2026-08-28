@@ -216,3 +216,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+**/backend.hcl
+!**/backend.hcl.example
+terraform/modules/pipeline/build/
+
+# Kaggle dataset — only the CA sample is committed; see data/README.md
+data/*
+!data/README.md
+!data/CAvideos.csv
+!data/CA_category_id.json
+
+# Local-only / sensitive helper files
+scripts/aws_copy.sh
+scripts/infromation.md

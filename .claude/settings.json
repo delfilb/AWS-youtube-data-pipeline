@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"exit:$?\")",
+      "Bash(terraform version *)",
+      "Bash(terraform fmt *)",
+      "Bash(terraform init *)",
+      "Bash(terraform validate *)",
+      "Bash(TF_LOG=ERROR terraform validate)",
+      "Bash(powershell -NoProfile -Command \"Get-Date\")",
+      "Bash(env)",
+      "Bash(python scripts/aws_copy.py --dry-run)",
+      "Bash(echo \"---exit:$?\")",
+      "Bash(terraform -chdir=terraform/modules/pipeline fmt)",
+      "Bash(python -c \"import ast; [ast.parse\\(open\\(f\\).read\\(\\)\\) or print\\('ok', f\\) for f in ['lambdas/json_to_parquet/lambda_function.py','data_quality/dq_lambda.py']]\")",
+      "Bash(python -m py_compile lambdas/json_to_parquet/lambda_function.py data_quality/dq_lambda.py lambdas/youtube_ingestion/lambda_function.py)",
+      "Bash(terraform -chdir=terraform/modules/pipeline fmt -check)",
+      "Bash(git status *)",
+      "Bash(git count-objects *)",
+      "Bash(echo \"exit:$? \\(1 = no matches, good\\)\")",
+      "Bash(git add *)"
+    ]
+  }
+}

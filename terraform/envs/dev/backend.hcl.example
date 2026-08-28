@@ -1,0 +1,3 @@
+bucket         = "yt-data-pipeline-tfstate-<your-account-id>"
+region         = "us-east-2"
+dynamodb_table = "yt-data-pipeline-tfstate-lock"

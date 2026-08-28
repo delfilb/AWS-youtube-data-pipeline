@@ -1,0 +1,20 @@
+aws_region   = "us-east-2"
+project_name = "yt-data-pipeline"
+
+youtube_api_key = "AIzaSy..."
+youtube_regions = ["US", "GB", "CA", "DE", "FR", "IN", "JP", "KR", "MX", "RU"]
+
+alert_email = "you@example.com"
+
+# Find the current version for your region/runtime at:
+# https://aws-sdk-pandas.readthedocs.io/en/stable/layers.html
+pandas_layer_arn = "arn:aws:lambda:us-east-2:336392948345:layer:AWSSDKPandas-Python311:14"
+
+pipeline_schedule_expression = "rate(6 hours)"
+enable_schedule              = true
+
+tags = {
+  Project     = "yt-data-pipeline"
+  Environment = "dev"
+  ManagedBy   = "terraform"
+}
