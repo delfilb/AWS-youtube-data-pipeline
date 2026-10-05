@@ -4,6 +4,7 @@ A cloud-native ETL pipeline that ingests YouTube trending video data across 10 r
 
 <img width="1341" height="745" alt="Plantilla de diagrama de arquitectura de AWS (1)" src="https://github.com/user-attachments/assets/128582e1-df1e-4b3f-9e15-63a8639254e3" />
 
+https://github.com/user-attachments/assets/ff74a7eb-9b8b-4e70-9cf3-ba35e61b1815
 
 ---
 
